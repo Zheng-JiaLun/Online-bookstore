@@ -102,16 +102,20 @@ export default {
         width: 73%;
         height: 150px;
         text-align: left;
-        
+        overflow: hidden;
         font-size: 16px;
         margin: 0;
     }
     .books-content p{
         padding-left: 10px;
         padding: 5px 0;
+        width: 200px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
     .booksname{
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 600;
     }
     .author{
