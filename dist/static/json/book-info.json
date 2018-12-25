@@ -51,10 +51,10 @@
         "authorInfo": "Nicholas C. Zakas（尼古拉斯•泽卡斯）世界顶级Web技术专家，现为雅虎公司界面呈现架构师，负责My Yahoo!和雅虎首页等大访问量站点的设计。尼古拉斯拥有丰富的Web开发和界面设计经验，曾经参与许多世界级大公司的Web解决方案开发。他还是High Performance JavaScript一书的作者，并与他人合作撰写了Professional Ajax和Even Faster Web Sites。尼古拉斯拥有梅里马克学院计算机科学学士学位和埃迪柯特学院的MBA学位。他的个人网站是www.nczonline.net，他的Twitter别名是@slicknet。"
     },
     {
-        "name": "编写可维护的JavaScript",
-        "describe": "《编写可维护的JavaScript》向开发人员阐述了如何在团队开发中编写具备高可维护性的JavaScript代码，书中详细说明了作为团队一分子，应该怎么写JavaScript。书中内容涵盖了编码风格、编程技巧、自动化、测试等几方面，既包括具体风格和原则的介绍，也包括示例和技巧说明，最后还介绍了如何通过自动化的工具和方法来实现一致的编程风格。",
+        "name": "别做那只迷途的候鸟",
+        "describe": "别人都在做自己喜欢的工作，你为什么不可以？每个人都有绕不过去的关键十年，翻开本书，立刻了解职场3232法则的秘密，52个职场困惑解",
         "author": "Nicholas C. Zakas",
-        "cover": "https://images-cn.ssl-images-amazon.com/images/I/51V3g6KWOnL._SX375_BO1,204,203,200_.jpg",
+        "cover": "https://bnmppic.bookuu.com/goods/06/25/55/2018102330297422-13763.jpg",
         "price": 36.30,
         "page": 730,
         "bookNum": 9787115275794,
@@ -90,16 +90,16 @@
         "authorInfo": "Nicholas C. Zakas（尼古拉斯•泽卡斯）世界顶级Web技术专家，现为雅虎公司界面呈现架构师，负责My Yahoo!和雅虎首页等大访问量站点的设计。尼古拉斯拥有丰富的Web开发和界面设计经验，曾经参与许多世界级大公司的Web解决方案开发。他还是High Performance JavaScript一书的作者，并与他人合作撰写了Professional Ajax和Even Faster Web Sites。尼古拉斯拥有梅里马克学院计算机科学学士学位和埃迪柯特学院的MBA学位。他的个人网站是www.nczonline.net，他的Twitter别名是@slicknet。"
     },
     {
-        "name": "响应式Web设计:HTML5和CSS3实战",
+        "name": "智能革命：迎接人工智能时代的社会、经济与文化变革",
         "describe": "移动互联网时代到来了。《响应式Web设计：HTML5和CSS3实战》将当前Web设计中热门的响应式设计技术与HTML5和CSS3结合起来，为读者全面深入地讲解了针对各种屏幕大小设计和开发现代网站的各种技术。不仅讨论了媒体查询、流式布局、相对字体、响应式媒体，更将HTML5和CSS3的相关知识点一并讲解，是学习最新Web设计技术不可多得的佳作。",
-        "author": "Ben Frain",
-        "cover": "https://images-cn.ssl-images-amazon.com/images/I/516GI3E8NtL._SX396_BO1,204,203,200_.jpg",
+        "author": "李彦宏",
+        "cover": "https://bnmppic.bookuu.com/goods/10/20/05/A104605.jpg",
         "price": 40.70,
         "page": 730,
         "bookNum": 9787115275797,
         "date": "2006年",
-        "info1": "本书从最早期Netscape浏览器中的JavaScript开始讲起，直到当前它对XML和Web服务的具体支持，内容主要涉及JavaScript的语言特点、JavaScript与浏览器的交互、更高级的JavaScript技巧，以及与在Web应用程序中部署JavaScript解决方案有关的问题，如错误处理、调试、安全性、优化/混淆化、XML和Web服务，最后介绍应用所有这些知识来创建动态用户界面。本书适合有一定编程经验的开发人员阅读，也可作为高校相关专业课程的教材",
-        "info2": "本书是JavaScript 超级畅销书的最新版。ECMAScript 5 和HTML5 在标准之争中双双胜出，使大量专有实现和客户端扩展正式进入规范，同时也为JavaScript 增添了很多适应未来发展的新特性。本书这一版除增加5 章全新内容外，其他章节也有较大幅度的增补和修订，新内容篇幅约占三分之一。全书从JavaScript 语言实现的各个组成部分——语言核心、DOM、BOM、事件模型讲起，深入浅出地探讨了面向对象编程、Ajax 与Comet 服务器端通信，HTML5 表单、媒体、Canvas（包括WebGL）及Web Workers、地理定位、跨文档传递消息、客户端存储（包括IndexedDB）等新API，还介绍了离线应用和与维护、性能、部署相关的最佳开发实践。本书附录展望了未来的API 和ECMAScript Harmony 规范。",
+        "info1": "人类历**的历次技术革命，都带来了人类感知和认知能力的不断提升，从而使人类知道*多，做到*多，体验*多。以此为标准，李彦宏在本书中将人工智能定义为堪比任何一次技术革命的伟大变革，并且明确提出，在技术与人的关系上，智能革命不同于前几次技术革命，不是人去适应机器，而是机器主动来学习和适应人类，并同人类一起学习和创新这个世界。",
+        "info2": "大数据是智能社会运转的根本动力和燃料。以百度为代表的搜索引擎公司，由于对数据资源的获取和使用类似深度学习的商业模式，也与大数据-深度学习-提取模式-创造用户价值这一研发文化相匹配，使其天然具备了人工智能的基因。书中通过对'百度大脑'的解析，从硬件集群、计算能力、大数据资源、人工智能文化等方面提出了智能化的基本标准，并且从制造业升级、金融革新、无人驾驶、管理革命、智能生活等多个维度，描绘即将到来的智能社会，反思人类即将面临的种种挑战。",
         "authorInfo": "Nicholas C. Zakas（尼古拉斯•泽卡斯）世界顶级Web技术专家，现为雅虎公司界面呈现架构师，负责My Yahoo!和雅虎首页等大访问量站点的设计。尼古拉斯拥有丰富的Web开发和界面设计经验，曾经参与许多世界级大公司的Web解决方案开发。他还是High Performance JavaScript一书的作者，并与他人合作撰写了Professional Ajax和Even Faster Web Sites。尼古拉斯拥有梅里马克学院计算机科学学士学位和埃迪柯特学院的MBA学位。他的个人网站是www.nczonline.net，他的Twitter别名是@slicknet。"
     },
     {
