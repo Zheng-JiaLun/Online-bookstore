@@ -9,7 +9,7 @@
              <router-link to="./receiving-address"><p>收货地址管理<i class="el-icon-arrow-right"></i></p></router-link>
         </div>
         <div class="box">
-            <p>我的订单<i class="el-icon-arrow-right"></i></p>
+            <router-link to="./my-order"><p>我的订单<i class="el-icon-arrow-right"></i></p></router-link>
             <p>我的评价<i class="el-icon-arrow-right"></i></p>
         </div>
         <div class="box">

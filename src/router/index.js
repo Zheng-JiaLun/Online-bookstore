@@ -9,6 +9,7 @@ import Personal from '@/pages/personal-center.vue'
 import Modify from '@/pages/modify-information'
 import Settlement from '@/pages/settlement'
 import Receiving from '../pages/receiving-address'
+import Order from '../pages/my-order'
 
 
 
@@ -62,6 +63,11 @@ export default new Router({
       path:'/receiving-address',
       component:Receiving,
       name:'receiving'
+    },
+    {
+      path:'/my-order',
+      component:Order,
+      name:'order'
     },
   ]
 })

@@ -5,7 +5,7 @@
             <span class="edit" @click="allElection()" :class="{'active':isCheckedAll}" v-show="isShow">全选</span>
             <span class="edit" @click="deleteChecked()" v-show="isShow">删除</span>
             <span class="edit" @click="edit" v-show="isShow">取消</span>
-            <sapn class="edit left-edit" @click="edit">编辑</sapn>
+            <span class="edit left-edit" @click="edit">编辑</span>
         </p>
         <p class="nothingAtAll">购物车里面空空如也,赶快去买书沉浸在知识的海洋里吧!</p>
         <div class="car">
@@ -92,8 +92,10 @@ export default {
       
         //支付
         pay(){
-            
+            console.log(this.carPanelData)
             if(this.carPanelData.length != 0){
+                // this.order.push(true);
+                localStorage.order = JSON.stringify(this.carPanelData)
                  sessionStorage.pay = JSON.stringify(this.carPanelData)
                 this.$router.push({ name: 'settlement'})
             }else{
@@ -232,7 +234,11 @@ export default {
     }
     .infor p {
         margin: 0 0 0 10px;
+        width: 180px;
         text-align: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
     .infor .name {
         height: 25px;
@@ -289,6 +295,9 @@ export default {
         margin: 10px 0 0 0;
     }
     .goPay {
+        position: fixed;
+        bottom: 50px;
+        left: 0;
         width: 100%;
         
         height: 60px;
@@ -299,7 +308,7 @@ export default {
         outline:none;
         letter-spacing: 5px;
         background-color: rgb(50, 184, 224);
-        margin-top: 30px;
+        
     }
     .nothingAtAll{
         margin: 20px 50px;

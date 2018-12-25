@@ -43,6 +43,7 @@ router.beforeEach((to, from, next) => {
       }
    }
   }
+  //判断更改顶部标题
   switch(to.name) {
     case "home":  store.commit('changeTitle', "主页"); break;
     case "search":  store.commit('changeTitle', "搜索"); break;
@@ -53,6 +54,7 @@ router.beforeEach((to, from, next) => {
     case "receiving":  store.commit('changeTitle', "收货地址"); break;
     case "settlement":  store.commit('changeTitle', "结算中心"); break;
     case "modify":  store.commit('changeTitle', "个人资料设置"); break;
+    case "order":  store.commit('changeTitle', "我的订单"); break;
   }
   next();
 })

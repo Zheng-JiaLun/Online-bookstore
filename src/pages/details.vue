@@ -16,7 +16,7 @@
         </div>
         <div class="buyBox">
             <button class="shopping" type="button" @click="addCarPanelHandel">加入购物车</button>
-            <button class="buy" type="button">立即购买</button>
+            <button class="buy" type="button" @click="ImmediatePurchaseHandle">立即购买</button>
         </div>
         <div class="textContentBox">
             <!-- 内容概要 -->
@@ -71,12 +71,14 @@ export default {
                 let data = this.$data.obj
                             //改变state,提交mutation,将数据提交给vuex
                             this.$store.commit('addCarPanelData',data)
-                            
-                            console.log(data)
+                            alert('加入购物车成功')
             }else{
                 alert('还未登录,请前往登录')
                 this.$router.push({path:'/mine'})
             }
+        },
+        ImmediatePurchaseHandle(){
+            alert('此功能正在开发,请点击加入购物车购买~敬请期待!')
         }
     },
     created(){

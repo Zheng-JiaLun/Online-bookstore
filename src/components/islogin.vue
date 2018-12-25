@@ -27,7 +27,7 @@
                     <el-input type="password"  v-model="ruleForm2.checkPass" autocomplete="off"></el-input>
                 </el-form-item>
 
-                <el-form-item>
+                <el-form-item class="bottom-el-form-item">
                     <el-button type="primary" @click="submitForm('ruleForm2')">提交</el-button>
                     <el-button @click="resetForm('ruleForm2')">重置</el-button>
                 </el-form-item>
@@ -161,26 +161,40 @@ export default {
       signIn(){
              this.user.tel = this.$refs.input1.value
             this.user.password = this.$refs.input2.value
-            if(localStorage.getItem('user')== null || JSON.parse(localStorage.user)==''){
-                alert('该手机号未注册！')
+            let userInfor = JSON.parse(localStorage.user);
+            if(this.user.tel == '' ||  this.user.password == ''){
+                alert("请输入账号密码")
             }else{
-                this.users.push(this.user)
-                this.userInfor = JSON.parse(localStorage.user)
-                this.userInfor.forEach((item,index)=>{
+                if(localStorage.getItem('user')== null || JSON.parse(localStorage.user)==''){
+                alert('该手机号未注册！')
+                }else{
+                    this.users.push(this.user)
+                    let flag = false;
+                    let erro = false;
+                    userInfor.forEach((item,index)=>{
                         if(this.user.tel == item.tel && this.user.password == item.pass ) {
-                            console.log('登陆成功！正在跳转...')
-                            this.islogin.push(true);
-                            localStorage.loginShow = JSON.stringify(this.islogin)
-                            this.$router.push({name:'home'})
+                            flag = true
+                            return
+                        }else if(this.user.tel == item.tel && this.user.password !== item.pass ){
+                            erro = true
                             return
                         }
-                })
-                 if(this.user.tel !== this.userInfor.tel || this.user.password !== this.userInfor.password){
-                            alert('账号或密码错误')
-                 }
-                 
-
-        }
+                    })
+                    if(flag == true){
+                        alert("登陆成功")
+                        this.islogin.push(true);
+                        localStorage.loginShow = JSON.stringify(this.islogin)
+                        this.$router.push({name:'home'})
+                    }else if(erro){
+                        alert("密码错误")
+                    }else{
+                        alert("账号未注册")
+                    }
+              
+                }
+            }
+          
+            
       },
        submitForm(formName) {
             let userInfor = [];
@@ -198,6 +212,7 @@ export default {
                     userInfor.push(ruleForm2);
                     localStorage.user = JSON.stringify(userInfor)
                     alert('恭喜您,注册成功!')
+                    signInPage();
                     
                     
                 }else {
@@ -219,7 +234,9 @@ export default {
                         ruleForm2.pass = this.$refs.input4.value;
                         userInfor.push(ruleForm2);
                         localStorage.user = JSON.stringify(userInfor)
-                        alert('恭喜您,注册成功!')
+                        alert('恭喜您,注册成功!');
+                        this.isSignIn = true;
+                        this.isRegister = false
                        
                     }
                 }
@@ -295,4 +312,5 @@ export default {
           background: rgba(0, 119, 255, 0.76);
           color: blue;
       }
+    
 </style>

@@ -4,7 +4,7 @@
        
         <div class="block">
             <span class="demonstration"></span>
-            <el-carousel trigger="click" height="174px">
+            <el-carousel trigger="click" height="150px">
             <el-carousel-item v-for="item in  imgList" :key="item">
                 <img :src="item" alt="顶部轮播图">
             </el-carousel-item>
@@ -12,7 +12,7 @@
         </div>
         <div class="top-title">
             <i class="el-icon-bell"></i>
-            <span>双12全场图书低至1折，更有隐藏神秘惊喜</span>
+            <span>全场图书低至1折，更有隐藏神秘惊喜</span>
         </div>
         <div class="newbooks-box">
             <h3>新书上架</h3>
@@ -42,9 +42,9 @@ export default {
         return {
            
             imgList:[
-            require('../assets/img/01.png'),
-            require('../assets/img/02.png'),
-            require('../assets/img/03.png')
+            require('../assets/img/1.png'),
+            require('../assets/img/2.png'),
+            require('../assets/img/3.png')
             ]
         }
     },
@@ -53,7 +53,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     .top-title{
         font-size: 14px; font-weight: 400; font-style: normal; text-decoration: none; font-family: "微软雅黑"; color: rgb(77, 76, 76);
         height: 44px;border-bottom: 1px solid rgb(204, 204, 204);
@@ -63,15 +63,20 @@ export default {
         font-size: 24px;
     color: rgb(255, 153, 51);
     }
-   .tabBarItem a {
-    background: #409EFF;
-    }
+   
     .newbooks-box h3{
         border-bottom: 1px dashed #409EFF;
         font-weight: 500;
         padding-bottom: 5px;
         margin:10px 35px;
 
+    }
+    .el-carousel__item{
+        background: rgb(202, 202, 202);
+    }
+    .el-carousel__item img{
+        width: 100%;
+        /* height: 174px; */
     }
    
 </style>

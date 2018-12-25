@@ -87,19 +87,19 @@ export default {
        position: relative;
         width: 90%;
         margin: 0 auto;
-        border-bottom: 1px solid rgb(131, 131, 131);
+        border-bottom: 1px solid rgb(206, 206, 206);
     }
     img{
-        min-height: 130px;
-        max-height: 150px;
-        min-width: 80px;
-        max-width: 100px;
-        width: 25%;
+       
+        width: 90px;
+        height: 130px;
         float: left;
         margin-left: 2%;
+        margin-top: 5px;
+        
     }
     .books-content{
-        width: 73%;
+        width: 170px;
         height: 150px;
         text-align: left;
         overflow: hidden;
@@ -109,7 +109,8 @@ export default {
     .books-content p{
         padding-left: 10px;
         padding: 5px 0;
-        width: 200px;
+        width: 160px;
+        margin: 5px 0;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
